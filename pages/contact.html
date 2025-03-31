@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Monterail Health</title>
+  <meta name="description" content="Get in touch with our healthcare software development team. Schedule a consultation to discuss your medical technology project needs.">
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <!-- Favicon -->
+  <link rel="icon" href="../assets/images/logos/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../assets/images/logos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="../index.html" class="site-logo">
+        <img src="../assets/images/logos/monterail-logo.svg" alt="Monterail Logo" width="180">
+      </a>
+      
+      <div class="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="expertise.html" class="nav-link">Healthcare Expertise</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="case-studies.html" class="nav-link">Case Studies</a>
+          </li>
+          <li class="nav-item">
+            <a href="compliance.html" class="nav-link">Compliance & Security</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class="menu-overlay"></div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header section-light">
+    <div class="container">
+      <h1 class="page-title">Contact Us</h1>
+      <p class="page-subtitle">Reach out to discuss your healthcare software development needs. We're here to help you build innovative, compliant, and user-friendly healthcare solutions.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2 class="section-title">Get in Touch</h2>
+          <p>We're excited to hear about your healthcare project and discuss how we can help bring your vision to life. Fill out the form, and our healthcare technology experts will get back to you within 24 hours.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon">
+                <img src="../assets/images/icons/email-icon.svg" alt="Email">
+              </div>
+              <div class="method-details">
+                <h3 class="method-title">Email</h3>
+                <p><a href="mailto:healthcare@monterail.com">healthcare@monterail.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <img src="../assets/images/icons/phone-icon.svg" alt="Phone">
+              </div>
+              <div class="method-details">
+                <h3 class="method-title">Phone</h3>
+                <p><a href="tel:+48717002230">+48 71 700 22 30</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon">
+                <img src="../assets/images/icons/location-icon.svg" alt="Location">
+              </div>
+              <div class="method-details">
+                <h3 class="method-title">Location</h3>
+                <p>Monterail sp. z o.o.<br>Oławska 27-29<br>50-123 Wrocław, Poland</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-social">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="https://linkedin.com/company/monterail" target="_blank" class="social-link">LinkedIn</a>
+              <a href="https://twitter.com/monterail" target="_blank" class="social-link">Twitter</a>
+              <a href="https://facebook.com/monterail" target="_blank" class="social-link">Facebook</a>
+              <a href="https://instagram.com/monterail" target="_blank" class="social-link">Instagram</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form" action="#" method="POST">
+            <div class="form-heading">
+              <h2>Tell Us About Your Project</h2>
+              <p>Fill out the form below to start the conversation</p>
+            </div>
+            
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="company" class="form-label">Company Name</label>
+              <input type="text" id="company" name="company" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control">
+            </div>
+            
+            <div class="form-group">
+              <label for="projectType" class="form-label">Type of Healthcare Project *</label>
+              <select id="projectType" name="projectType" class="form-control" required>
+                <option value="" disabled selected>Select project type</option>
+                <option value="Mental Health App">Mental Health Application</option>
+                <option value="Remote Monitoring">Remote Patient Monitoring</option>
+                <option value="Telemedicine">Telemedicine Solution</option>
+                <option value="Medical Wearable">Medical Wearable/IoT</option>
+                <option value="Health Analytics">Health Data Analytics</option>
+                <option value="Public Health">Public Health Solution</option>
+                <option value="Other">Other (please specify)</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="service" class="form-label">Service Needed *</label>
+              <select id="service" name="service" class="form-control" required>
+                <option value="" disabled selected>Select service</option>
+                <option value="CTO as a Service">CTO as a Service</option>
+                <option value="Product Development">Product Development</option>
+                <option value="Team Extension">Team Extension</option>
+                <option value="Not Sure">Not Sure Yet</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="budget" class="form-label">Budget Range</label>
+              <select id="budget" name="budget" class="form-control">
+                <option value="" disabled selected>Select budget range</option>
+                <option value="Under $50k">Under $50,000</option>
+                <option value="$50k-$100k">$50,000 - $100,000</option>
+                <option value="$100k-$250k">$100,000 - $250,000</option>
+                <option value="$250k-$500k">$250,000 - $500,000</option>
+                <option value="$500k+">$500,000+</option>
+                <option value="Not Sure">Not Sure Yet</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="timeline" class="form-label">Timeline</label>
+              <select id="timeline" name="timeline" class="form-control">
+                <option value="" disabled selected>Select timeline</option>
+                <option value="ASAP">As Soon As Possible</option>
+                <option value="1-3 Months">1-3 Months</option>
+                <option value="3-6 Months">3-6 Months</option>
+                <option value="6+ Months">6+ Months</option>
+                <option value="Not Sure">Not Sure Yet</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message" class="form-label">Project Description *</label>
+              <textarea id="message" name="message" class="form-control form-textarea" rows="5" required></textarea>
+            </div>
+            
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">I consent to Monterail processing my personal data in accordance with the <a href="https://www.monterail.com/privacy-policy" target="_blank">Privacy Policy</a> *</label>
+            </div>
+            
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">I'd like to receive healthcare technology insights and updates from Monterail</label>
+            </div>
+            
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary">
+                Submit Request
+                <span class="btn-icon">→</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-light">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked Questions</h2>
+      
+      <div class="faq-container">
+        <div class="faq-item fade-in-element">
+          <div class="faq-question">
+            <h3>What healthcare regulations do you have experience with?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>We have extensive experience working with various healthcare regulations including HIPAA, GDPR, FDA guidelines for software as a medical device (SaMD), ISO 13485, and other relevant standards. Our team stays up-to-date with evolving regulatory requirements to ensure that our healthcare solutions maintain compliance.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-element">
+          <div class="faq-question">
+            <h3>How long does a typical healthcare software project take?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>The timeline for healthcare software projects varies significantly based on complexity, scope, and regulatory requirements. A minimum viable product (MVP) might take 3-6 months to develop, while a comprehensive enterprise healthcare solution could take 9-18 months or more. During our initial consultation, we'll provide a more accurate timeline based on your specific project requirements.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-element">
+          <div class="faq-question">
+            <h3>Do you provide ongoing maintenance and support?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we offer comprehensive maintenance and support services for healthcare applications. This includes regular updates, security patches, compliance monitoring, performance optimization, and technical support. We can tailor our support services to your specific needs and budget.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-element">
+          <div class="faq-question">
+            <h3>How do you handle data privacy and security in healthcare applications?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>We implement comprehensive security measures including data encryption, access controls, audit logging, and vulnerability management. Our development process integrates security and privacy by design principles, and we conduct regular security assessments to identify and address potential vulnerabilities. All our healthcare solutions are built to comply with relevant privacy regulations like HIPAA and GDPR.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-element">
+          <div class="faq-question">
+            <h3>What technologies do you use for healthcare software development?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>We use a variety of technologies for healthcare software development, including React and React Native for front-end, Ruby on Rails, Node.js, and Python for back-end, and various cloud platforms for hosting. We also work with healthcare-specific technologies such as HL7 FHIR for interoperability. Our technology choices are always guided by your specific project requirements, regulatory considerations, and best practices for healthcare software.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in-element">
+          <div class="faq-question">
+            <h3>Do you have experience integrating with EHR/EMR systems?</h3>
+            <div class="faq-toggle">+</div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we have experience integrating with various Electronic Health Record (EHR) and Electronic Medical Record (EMR) systems. We're familiar with healthcare interoperability standards like HL7 FHIR and can develop solutions that securely exchange data with existing healthcare systems, ensuring seamless workflows and data continuity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="../assets/images/logos/monterail-logo-white.svg" alt="Monterail Logo" width="180">
+          </div>
+          <p class="footer-about">
+            Monterail is a full-service software development company with 13+ years of experience building innovative web, mobile, and healthcare applications.
+          </p>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Healthcare Solutions</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="expertise.html#mental-health">Mental Health Apps</a></li>
+            <li class="footer-link"><a href="expertise.html#remote-monitoring">Remote Patient Monitoring</a></li>
+            <li class="footer-link"><a href="expertise.html#telemedicine">Telemedicine Solutions</a></li>
+            <li class="footer-link"><a href="expertise.html#wearables">Medical Wearables & IoT</a></li>
+            <li class="footer-link"><a href="expertise.html#data-analytics">Health Data Analytics</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Services</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="services.html#cto-service">CTO as a Service</a></li>
+            <li class="footer-link"><a href="services.html#product-development">Product Development</a></li>
+            <li class="footer-link"><a href="services.html#team-extension">Team Extension</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4 class="footer-title">Company</h4>
+          <ul class="footer-links">
+            <li class="footer-link"><a href="https://www.monterail.com/about">About Monterail</a></li>
+            <li class="footer-link"><a href="https://www.monterail.com/blog">Blog</a></li>
+            <li class="footer-link"><a href="https://www.monterail.com/careers">Careers</a></li>
+            <li class="footer-link"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2025 Monterail. All rights reserved. <a href="https://www.monterail.com/privacy-policy">Privacy Policy</a>
+        </div>
+        
+        <div class="footer-social">
+          <a href="https://twitter.com/monterail" class="social-icon" target="_blank">Twitter</a>
+          <a href="https://www.linkedin.com/company/monterail" class="social-icon" target="_blank">LinkedIn</a>
+          <a href="https://www.facebook.com/monterail" class="social-icon" target="_blank">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
