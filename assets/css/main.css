@@ -1167,6 +1167,44 @@ select:focus,
   }
 }
 
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix CLS with explicit dimensions */
+img[width][height] {
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Image container aspect ratios */
+.case-study-image-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Improved responsive image handling */
+picture {
+  display: block;
+  width: 100%;
+}
+
+/* Add object-fit for cover/contain images */
+.case-study-image {
+  width: 100%;
+  height: 24rem;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .case-study-image {
+    height: 20rem;
+  }
+}
+
 /* Code for responsive header */
 .menu-toggle {
   display: none;
