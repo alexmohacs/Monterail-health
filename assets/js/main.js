@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
   // Services Tabs Functionality
   const tabLinks = document.querySelectorAll('.tabs-navigation .tab-link');
+  let scrollPosition = 0;
   
   tabLinks.forEach(tabLink => {
     tabLink.addEventListener('click', function(e) {
-      e.preventDefault(); // Prevent default anchor behavior
+      // Store current scroll position
+      scrollPosition = window.scrollY;
+      
+      // Prevent default anchor behavior
+      e.preventDefault();
       
       const targetId = this.getAttribute('href');
       const targetContent = document.querySelector(targetId);
@@ -20,51 +25,51 @@ document.addEventListener('DOMContentLoaded', function() {
         this.classList.add('active');
         targetContent.classList.add('active');
         
-        // Update URL hash without scrolling
-        history.pushState(null, null, targetId);
+        // Restore scroll position immediately
+        window.scrollTo(0, scrollPosition);
+        
+        // And again after a small delay to ensure it sticks
+        setTimeout(() => {
+          window.scrollTo(0, scrollPosition);
+        }, 10);
       }
     });
   });
   
-  // Highlight active tab based on URL hash
-  function setActiveTabFromHash() {
-    const hash = window.location.hash;
-    if (hash && document.querySelector(hash)) {
-      const tabLink = document.querySelector(`.tab-link[href="${hash}"]`);
-      if (tabLink) {
-        // Get targetContent
-        const targetContent = document.querySelector(hash);
+  // Make sure links to tabs within the page use the tab functionality
+  document.querySelectorAll('a[href^="#cto-service"], a[href^="#product-development"], a[href^="#team-extension"]').forEach(link => {
+    if (!link.classList.contains('tab-link')) { // Skip the actual tab links
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
         
-        // Remove active class from all tabs and content
-        tabLinks.forEach(tab => tab.classList.remove('active'));
-        document.querySelectorAll('.service-detail').forEach(content => {
-          content.classList.remove('active');
-        });
+        const targetId = this.getAttribute('href');
+        const tabToActivate = document.querySelector(`.tab-link[href="${targetId}"]`);
         
-        // Add active class to the tab and its content
-        tabLink.classList.add('active');
-        targetContent.classList.add('active');
-      }
+        if (tabToActivate) {
+          tabToActivate.click();
+        }
+      });
+    }
+  });
+  
+  // Remove ALL tab-related URL hash behavior
+  // This completely eliminates the hash-based approach to prevent scrolling issues
+  
+  // Initial tab setup
+  function initializeTabs() {
+    // Default to first tab being active if none is specified
+    const firstTabLink = document.querySelector('.tabs-navigation .tab-link');
+    const firstContentId = firstTabLink?.getAttribute('href');
+    const firstContent = firstContentId ? document.querySelector(firstContentId) : null;
+    
+    if (firstTabLink && firstContent) {
+      firstTabLink.classList.add('active');
+      firstContent.classList.add('active');
     }
   }
   
-  // Prevent hash changes from scrolling
-  // Need to use both hashchange and link click handlers
-  if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
-  
-  // Run on page load
-  setActiveTabFromHash();
-  
-  // Listen for hash changes
-  window.addEventListener('hashchange', function(e) {
-    setActiveTabFromHash();
-    // Return to the current scroll position
-    setTimeout(() => {
-      window.scrollTo(window.scrollX, window.scrollY);
-    }, 0);
-  });
+  // Initialize on page load
+  initializeTabs();
 
   // Mobile menu toggling
   const menuToggle = document.querySelector('.menu-toggle');
