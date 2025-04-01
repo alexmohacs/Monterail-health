@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="70" viewBox="0 0 140 70">
+  <rect x="10" y="20" width="120" height="30" fill="#005EB8"/>
+  <text x="70" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#FFFFFF">NHS</text>
+  <text x="70" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#005EB8">Health Research Authority</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="70" viewBox="0 0 120 70">
+  <rect x="10" y="15" width="100" height="40" rx="5" ry="5" fill="#f0f0f0" stroke="#e20000" stroke-width="2"/>
+  <text x="60" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="18" fill="#e20000">HL7</text>
+  <text x="60" y="50" text-anchor="middle" font-family="Arial, sans-serif" font-size="8" fill="#333333">International</text>
+  <rect x="44" y="55" width="32" height="10" rx="2" ry="2" fill="#e20000"/>
+  <text x="60" y="63" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="7" fill="#ffffff">GOLD</text>
+  <text x="60" y="70" text-anchor="middle" font-family="Arial, sans-serif" font-size="5" fill="#333333">2023</text>
+</svg>

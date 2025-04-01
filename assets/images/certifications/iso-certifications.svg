@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="80" viewBox="0 0 280 80">
+  <g transform="translate(10,10)">
+    <circle cx="40" cy="40" r="35" fill="#e0f0e0" stroke="#009933" stroke-width="2"/>
+    <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#333333">ISO 9001</text>
+    <text x="40" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">2015</text>
+    <text x="40" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="10" fill="#009933">CERTIFIED</text>
+  </g>
+  
+  <g transform="translate(100,10)">
+    <circle cx="40" cy="40" r="35" fill="#e0f0e0" stroke="#009933" stroke-width="2"/>
+    <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#333333">ISO 13485</text>
+    <text x="40" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">2016</text>
+    <text x="40" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="10" fill="#009933">CERTIFIED</text>
+  </g>
+  
+  <g transform="translate(190,10)">
+    <circle cx="40" cy="40" r="35" fill="#e0f0e0" stroke="#009933" stroke-width="2"/>
+    <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#333333">ISO 27001</text>
+    <text x="40" y="48" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#333333">2017</text>
+    <text x="40" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="10" fill="#009933">CERTIFIED</text>
+  </g>
+</svg>

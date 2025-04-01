@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="70" viewBox="0 0 140 70">
+  <text x="70" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="14" fill="#996633">Gold</text>
+  <text x="70" y="40" text-anchor="middle" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#333333">Microsoft Partner</text>
+  <text x="70" y="55" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" fill="#666666">Application Development</text>
+  
+  <g transform="translate(70,30) scale(0.15)">
+    <rect x="-95" y="-95" width="90" height="90" fill="#f25022"/>
+    <rect x="5" y="-95" width="90" height="90" fill="#7fba00"/>
+    <rect x="-95" y="5" width="90" height="90" fill="#00a4ef"/>
+    <rect x="5" y="5" width="90" height="90" fill="#ffb900"/>
+  </g>
+</svg>
