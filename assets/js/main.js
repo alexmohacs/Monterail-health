@@ -1,4 +1,71 @@
 document.addEventListener('DOMContentLoaded', function() {
+  // Services Tabs Functionality
+  const tabLinks = document.querySelectorAll('.tabs-navigation .tab-link');
+  
+  tabLinks.forEach(tabLink => {
+    tabLink.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default anchor behavior
+      
+      const targetId = this.getAttribute('href');
+      const targetContent = document.querySelector(targetId);
+      
+      if (targetContent) {
+        // Remove active class from all tabs and content
+        tabLinks.forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.service-detail').forEach(content => {
+          content.classList.remove('active');
+        });
+        
+        // Add active class to clicked tab and its content
+        this.classList.add('active');
+        targetContent.classList.add('active');
+        
+        // Update URL hash without scrolling
+        history.pushState(null, null, targetId);
+      }
+    });
+  });
+  
+  // Highlight active tab based on URL hash
+  function setActiveTabFromHash() {
+    const hash = window.location.hash;
+    if (hash && document.querySelector(hash)) {
+      const tabLink = document.querySelector(`.tab-link[href="${hash}"]`);
+      if (tabLink) {
+        // Get targetContent
+        const targetContent = document.querySelector(hash);
+        
+        // Remove active class from all tabs and content
+        tabLinks.forEach(tab => tab.classList.remove('active'));
+        document.querySelectorAll('.service-detail').forEach(content => {
+          content.classList.remove('active');
+        });
+        
+        // Add active class to the tab and its content
+        tabLink.classList.add('active');
+        targetContent.classList.add('active');
+      }
+    }
+  }
+  
+  // Prevent hash changes from scrolling
+  // Need to use both hashchange and link click handlers
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+  
+  // Run on page load
+  setActiveTabFromHash();
+  
+  // Listen for hash changes
+  window.addEventListener('hashchange', function(e) {
+    setActiveTabFromHash();
+    // Return to the current scroll position
+    setTimeout(() => {
+      window.scrollTo(window.scrollX, window.scrollY);
+    }, 0);
+  });
+
   // Mobile menu toggling
   const menuToggle = document.querySelector('.menu-toggle');
   const navMenu = document.querySelector('.nav-menu');
